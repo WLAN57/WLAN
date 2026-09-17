@@ -1,0 +1,13 @@
+name=input("Введите имя:")
+age=int(input("Введите возраст:"))
+subjects=input("Ваши любимые предметы:")
+student ={
+    "name":name,
+    "age":age,
+    "subjects":subjects
+}
+print(30*"=")
+print("Анкета")
+print(30*"=")
+print(f"Имя:{student["name"]}\nВозраст:{student["age"]}\nЛюбимые предметы:{student["subjects"]}")
+print(30*"=")
