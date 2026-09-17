@@ -1,0 +1,6 @@
+shopping_list=["молоко","хлеб","сыр","колбаса"]
+shopping_list.append("печенье")
+print(shopping_list)
+shopping_set=set(shopping_list)
+print(shopping_set)
+# Отличается отсутствием порядка и если бы были 2 одинаковых продукта остался только 1
