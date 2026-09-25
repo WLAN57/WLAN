@@ -1,1 +1,10 @@
+import math
 
+a=input("Введите число: ")
+
+try:
+    a=int(a)
+except ValueError:
+    a=float(a)
+
+print(math.ceil(abs(a))+math.floor(abs(a)))
