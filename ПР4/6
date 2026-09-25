@@ -1,0 +1,6 @@
+import math
+
+x=int(input("Введите x: "))
+p=math.radians(x)
+
+print(math.sin(p)+math.cos(p)+(math.tan(p)**2))
