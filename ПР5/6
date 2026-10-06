@@ -1,0 +1,33 @@
+import math
+
+def calculate_distance(x1,x2):
+    """
+    Вычисляет дистанцию между 2 точками
+    :param
+        x1
+        x2
+    :return
+        distance
+    """
+    if x2>x1:
+        distance=x2-x1
+    else:
+        distance=x1-x2
+    return distance
+def calculate_triangle_area(a,b,c):
+    """
+    Вычисляет площадь треугольника по формуле Герона
+    :param
+        a
+        b
+        c
+    :return
+        S
+    """
+    p=(a+b+c)/2
+    S=math.sqrt(p*(p-a)*(p-b)*(p-c))
+    return S
+
+A,B,C=map(float,input("Введите координаты точек (A B C): ").split())
+print(f"Длина AB:{calculate_distance(A,B)},Длина BC:{calculate_distance(B,C)},Длина CA:{calculate_distance(C,A)}")
+print(f"Площадь треугольника - {calculate_triangle_area(A,B,C)}")
