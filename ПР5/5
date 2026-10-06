@@ -1,0 +1,25 @@
+NOMINAL=[5000,2000,1000,500,200,100]
+def atm(summ):
+    """
+    Имитация выдачи денег банкоматом
+    :param
+        summ
+    :return
+        bill_list
+    """
+    bill_list=[]
+    for nom in NOMINAL:
+        count=summ//nom
+        bill_list.append(count)
+        summ-=count*nom
+    return bill_list
+
+
+
+summ=int(input("Введите желаемую сумму для вывода: "))
+if summ % 100 == 0:
+    bills=atm(summ)
+    for nom, count in zip(NOMINAL,bills): #zip обьединяет 2 списка в 1 кортеж
+        print(f"Кюпюр по {nom} - {count}")
+else:
+    print("Число должно быть кратно 100")
