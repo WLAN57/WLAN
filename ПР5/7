@@ -1,0 +1,19 @@
+FUEL_COST=120
+
+def fuel_calc(distance,fuel_on_100km):
+    """
+    Вычисляет сколько потратится бензина и его цена
+    :param
+        distance:
+        fuel_on_100km:
+    :return
+        total_l
+        total_p
+    """
+    total_l=distance*(fuel_on_100km/100)
+    total_p=total_l*FUEL_COST
+    return total_l,total_p
+
+distance,fuel_on_100km=map(float,input("Введите расстояние и сколько литров на 100км ").split())
+
+print(f"Нужно бензина: {fuel_calc(distance,fuel_on_100km)[0]},Стоимость:{fuel_calc(distance,fuel_on_100km)[1]}")
