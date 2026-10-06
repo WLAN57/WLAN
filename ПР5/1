@@ -1,0 +1,20 @@
+TAX_RATE=13
+
+
+def income_tax(year_earn):
+    """
+    Вычисляет подоходный налог
+    :param
+     year_earn
+    :return:
+        tax
+        earn
+    """
+    tax=year_earn*(TAX_RATE*0.01)
+    earn=year_earn-tax
+    return tax,earn
+year_earn=int(input("Введите ваш годовой доход: "))
+
+print(f"Ваш доход {year_earn} \nНалог {income_tax(year_earn)[0]} \nНа руки {income_tax(year_earn)[1]}")
+
+
