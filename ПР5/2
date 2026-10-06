@@ -1,0 +1,16 @@
+def imt(weight,height):
+    """
+    Вычисляет ИМТ
+    :param
+        weight
+        height
+    :return:
+        index
+    """
+    height/=100
+    result=weight/(height*height)
+    return result
+
+weight,height = map(float,input("Введите ваш вес и рост(вес рост) ").split())
+
+print(f"Вам ИМТ: {imt(weight, height):.2f}")
