@@ -1,4 +1,5 @@
 mounth=int(input("Введите порядковый номер месяца "))
+
 if mounth == 2:
     print("В месяце 28 дней")
 elif mounth%2==0:
