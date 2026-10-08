@@ -1,4 +1,5 @@
 weight=int(input("Введите вес боксера: "))
+
 if weight<60:
     print("Легкий вес")
 elif weight<64:
