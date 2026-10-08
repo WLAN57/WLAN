@@ -1,0 +1,8 @@
+a,b,c=map(float,input("Введите 3 стороны треугольника(a b c): ").split())
+
+if a==b==c:
+    print("Равносторонний")
+elif a==b or b==c or c==a:
+    print("Равнобедренный")
+else:
+    print("Разносторонний")
