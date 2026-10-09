@@ -1,1 +1,10 @@
+temp,bar,bpm=map(float,input("Введите температуру давление(верхнее) пульс: ").split())
 
+if temp<35 or temp>38 or bar<105 or bar>140 or bpm<55 or bpm>110:
+    print("Требуется врач")
+elif 37>=temp>=36 and 130>=bar>=110 and 100>=bpm>=60:
+    print("Состояние нормальное")
+elif (36>=temp>=35 or 38>=temp>=37) or (110>=bar>=105 or 140>=bar>=130) or (60>=bpm>=55 or 110>=bpm>=100):
+    print("Легкое недомогание")
+else:
+    print("Неверные данные")
