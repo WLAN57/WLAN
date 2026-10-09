@@ -1,10 +1,10 @@
-number=int(input("Введите номер выпавшого кармана "))
+number = int(input("Введите номер выпавшого кармана "))
 
 if 36>=number>=0:
     if number==0:
         print("Зеленый")
     else:
-        if (10>=number>=1 or 28>=number>=19):
+        if (10 >= number >= 1 or 28 >=number>= 19):
             if number%2==0:
                 print("Черный")
             else:
