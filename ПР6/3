@@ -1,0 +1,15 @@
+col1,row1,col2,row2=map(int,input("Введите координаты 2 точек столбец строка(1 1 2 2): ").split())
+
+if (col1+row1) % 2 ==0:
+    color1="black"
+else:
+    color1="white"
+if (col2+row2) % 2 ==0:
+    color2="black"
+else:
+    color2="white"
+
+if color1==color2:
+    print("YES")
+else:
+    print("NO")
