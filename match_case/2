@@ -1,0 +1,18 @@
+first = int(input("Введите 1 число "))
+operand = input("Введите знак операции ")
+second = int(input("Введите 2 число "))
+
+match operand:
+    case "+":
+        result=first+second
+    case "-":
+        result=first-second
+    case "*":
+        result=first*second
+    case "/":
+        if second==0:
+            print("Ошибка, на 0 делить нельзя")
+        else:
+            result=first/second
+
+print(f"Результат - {result}")
